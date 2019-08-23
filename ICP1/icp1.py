@@ -24,15 +24,36 @@ def replaceWord(s):
         return s.replace('python', 'pythons')
 
 
+# creating an empty list
+lst = []
+
+# number of elemetns as input
+n = int(input("Enter number of elements : "))
+
+# iterating till the range
+for i in range(0, n):
+    inputStr = input()
+
+    lst.append(inputStr)  # adding the element
+
+print(lst)
 
 # code to get the input and delete first two character
-inputString = input("Enter Input String: ")
-deletedString = deletechar(inputString)
+# inputString = input("Enter Input String: ")
+deletedString = deletechar(lst)
 print('Input String with 2 char deleted: ', deletedString)
 
 # code to reverse the new string
 reverseOutput = reversestring(deletedString)
 print('Reverse input string: ', reverseOutput)
+
+# code to join list
+joiningString = ""
+
+for x in reverseOutput:
+    joiningString += x
+
+print(joiningString)
 
 # code to get two numbers and add it
 print('Add two numbers: ')

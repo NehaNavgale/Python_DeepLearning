@@ -10,25 +10,25 @@ import seaborn as sns
 #read dataset
 dataset = pd.read_csv('CC.csv')
 
-#assign
-x_train = dataset.iloc[:1000,[1,3,13,14]]
-print((x_train == 0).sum())
+# numeric_features = dataset.select_dtypes(include=[np.number])
+# corr = numeric_features.corr()
+#
+# print (corr['TENURE'].sort_values(ascending=False)[:4], '\n')
+# dataset.apply(lambda x: x.fillna(x.mean()),axis=0)
 
-bfMean = x_train['BALANCE'].mean()
-x_train['BALANCE'] = x_train['BALANCE'].replace(0, bfMean)
+##Null values
+nulls = pd.DataFrame(dataset.isnull().sum().sort_values(ascending=False)[:25])
+nulls.columns = ['Null Count']
+nulls.index.name = 'Feature'
+# print(nulls)
 
-bfMean = x_train['PURCHASES'].mean()
-x_train['PURCHASES'] = x_train['PURCHASES'].replace(0, bfMean)
+##handling the missing value
+data = dataset.select_dtypes(include=[np.number]).interpolate().dropna()
+# print(sum(data.isnull().sum() != 0))
 
-bfMean = x_train['CREDIT_LIMIT'].mean()
-x_train['CREDIT_LIMIT'] = x_train['CREDIT_LIMIT'].replace(0, bfMean)
 
-bfMean = x_train['PAYMENTS'].mean()
-x_train['PAYMENTS'] = x_train['PAYMENTS'].replace(0, bfMean)
-
-print((x_train== 0).sum())
-
-df = x_train
+# #assign
+x_train = data.iloc[:,[2,-5,-6]]
 
 #Preprocessing the data
 scaler = preprocessing.StandardScaler()
@@ -36,8 +36,8 @@ scaler.fit(x_train)
 X_scaled_array = scaler.transform(x_train)
 X_scaled = pd.DataFrame(X_scaled_array, columns = x_train.columns)
 
-
-from sklearn import metrics
+#
+# from sklearn import metrics
 wcss = []
 # ##elbow method to know the number of clusters
 for i in range(2,12):
@@ -47,10 +47,48 @@ for i in range(2,12):
     wcss.append(kmeans.inertia_)
     score = silhouette_score(x_train, kmeans.labels_, metric='euclidean')
     print("For n_clusters = {}, silhouette score is {})".format(i, score))
-
+#
 plt.plot(range(1,11),wcss)
 plt.title('the elbow method')
 plt.xlabel('Number of Clusters')
 plt.ylabel('Wcss')
 plt.show()
 
+# from sklearn import metrics
+wcss = []
+# ##elbow method to know the number of clusters
+for i in range(2,12):
+    kmeans = KMeans(n_clusters=i,init='k-means++',max_iter=300,n_init=10,random_state=0)
+    kmeans.fit(X_scaled)
+   # print(kmeans.inertia_,'-------------------')
+    wcss.append(kmeans.inertia_)
+    score = silhouette_score(X_scaled, kmeans.labels_, metric='euclidean')
+    print("For n_clusters = {}, silhouette score is {})".format(i, score))
+#
+plt.plot(range(1,11),wcss)
+plt.title('the elbow method')
+plt.xlabel('Number of Clusters')
+plt.ylabel('Wcss')
+plt.show()
+
+pca = PCA(2)
+x_pca = pca.fit_transform(X_scaled)
+df2 = pd.DataFrame(data=x_pca)
+# finaldf = pd.concat([df2,dataset[['TENURE']]],axis=1)
+# print(finaldf)
+
+from sklearn import metrics
+wcss = []
+# ##elbow method to know the number of clusters
+for i in range(2,5):
+    kmeans = KMeans(n_clusters=i,init='k-means++',max_iter=300,n_init=10,random_state=0)
+    kmeans.fit(df2)
+   # print(kmeans.inertia_,'-------------------')
+    wcss.append(kmeans.inertia_)
+    score = silhouette_score(df2, kmeans.labels_, metric='euclidean')
+    print("For n_clusters = {}, silhouette score is {})".format(i, score))
+plt.plot(range(1, 4), wcss)
+plt.title('the elbow method')
+plt.xlabel('Number of Clusters')
+plt.ylabel('Wcss')
+plt.show()

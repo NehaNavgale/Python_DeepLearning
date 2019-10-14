@@ -1,3 +1,4 @@
+# function to find the longest substring
 def findLongestSubstring(string):
     n = len(string)
     st = 0
@@ -26,7 +27,8 @@ def findLongestSubstring(string):
     return string[start: start + maxlen]
 
 if __name__ == "__main__":
-    #string = "pwwkew"
+    # taking input from user
     string = input('Enter the string:')
+    # call function to find the longest substring and pass the input string
     tup = (findLongestSubstring(string), len(list(findLongestSubstring(string))))
     print(tup)

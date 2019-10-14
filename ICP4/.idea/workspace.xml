@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="012a7943-8af4-4371-9dd3-3d2d18e3d05a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ICP5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICP5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ICP6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICP6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ICP7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICP7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab1/Source/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab1/Source/1lSubstring.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/1lSubstring.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/Source/2tupleDic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/2tupleDic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/Source/3airlineBooking.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/3airlineBooking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/Source/3libraryManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/3libraryManagement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/Source/4calender.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/Source/5classificationAlgorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/5classificationAlgorithm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/Source/6kMean.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/6kMean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/Source/7file_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/7file_operation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

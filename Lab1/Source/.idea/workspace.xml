@@ -5,16 +5,8 @@
       <change beforePath="$PROJECT_DIR$/../../ICP4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ICP4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ICP5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ICP5/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ICP6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ICP6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ICP7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ICP7/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1lSubstring.py" beforeDir="false" afterPath="$PROJECT_DIR$/1lSubstring.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2tupleDic.py" beforeDir="false" afterPath="$PROJECT_DIR$/2tupleDic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3airlineBooking.py" beforeDir="false" afterPath="$PROJECT_DIR$/3airlineBooking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/3libraryManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/3libraryManagement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4calender.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5classificationAlgorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/5classificationAlgorithm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6kMean.py" beforeDir="false" afterPath="$PROJECT_DIR$/6kMean.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7file_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/7file_operation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,18 +21,15 @@
     <SUITE FILE_PATH="coverage/Source$2tupleDic.coverage" NAME="2tupleDic Coverage Results" MODIFIED="1569784323058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Source$test.coverage" NAME="test Coverage Results" MODIFIED="1571019072227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Source$6kMean.coverage" NAME="6kMean Coverage Results" MODIFIED="1571071243624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Source$1lSubstring.coverage" NAME="1lSubstring Coverage Results" MODIFIED="1571067149289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Source$1lSubstring.coverage" NAME="1lSubstring Coverage Results" MODIFIED="1571080601659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/6kMean.py">
+        <entry file="file://$PROJECT_DIR$/1lSubstring.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-              <folding>
-                <element signature="e#42#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -74,11 +63,11 @@
         <option value="$PROJECT_DIR$/2tupleDic.py" />
         <option value="$PROJECT_DIR$/3libraryManagement.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/1lSubstring.py" />
         <option value="$PROJECT_DIR$/3airlineBooking.py" />
         <option value="$PROJECT_DIR$/7file_operation.py" />
         <option value="$PROJECT_DIR$/5classificationAlgorithm.py" />
         <option value="$PROJECT_DIR$/6kMean.py" />
+        <option value="$PROJECT_DIR$/1lSubstring.py" />
       </list>
     </option>
   </component>
@@ -100,11 +89,6 @@
             <path>
               <item name="Source" type="b2602c69:ProjectViewProjectNode" />
               <item name="Source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Source" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Source" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -136,7 +120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.6kMean">
+  <component name="RunManager" selected="Python.1lSubstring">
     <configuration name="1lSubstring" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Source" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -249,9 +233,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.1lSubstring" />
         <item itemvalue="Python.6kMean" />
         <item itemvalue="Python.5classificationAlgorithm" />
-        <item itemvalue="Python.1lSubstring" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.4compareClusteringAlgorithms" />
       </list>
@@ -272,18 +256,18 @@
       <workItem from="1569784069446" duration="1184000" />
       <workItem from="1570927597184" duration="4545000" />
       <workItem from="1570988435009" duration="301000" />
-      <workItem from="1570990045601" duration="9428000" />
+      <workItem from="1570990045601" duration="10049000" />
+      <workItem from="1571079708748" duration="580000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16833000" />
+    <option name="totallyTimeSpent" value="18034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="941" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26800978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -322,12 +306,8 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/4calender.py" />
-    <entry file="file://$PROJECT_DIR$/dataset/WA_Fn-UseC_-Telco-Customer-Churn.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clusteringAlgorithm.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/WA_Fn-UseC_-Telco-Customer-Churn.csv" />
+    <entry file="file://$PROJECT_DIR$/clusteringAlgorithm.txt" />
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -341,13 +321,6 @@
     <entry file="file://$PROJECT_DIR$/dataset/dataset_183_adult.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1lSubstring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="13" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/7file_operation.py">
@@ -393,13 +366,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/winequality-white.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/winequality-white.csv" />
     <entry file="file://$PROJECT_DIR$/dataset/winequality_white.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -409,11 +376,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/6kMean.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        <state relative-caret-position="405">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1lSubstring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>

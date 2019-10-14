@@ -48,9 +48,9 @@ for t in nltk.ngrams(word_tokens, 3):
 wordFreq = nltk.FreqDist(tg)
 mostCommon = wordFreq.most_common()
 
-#     d. Extract the top 10 of the most repeated trigrams based on their count.
+# d. Extract the top 10 of the most repeated trigrams based on their count.
 Top_ten_trigrams = wordFreq.most_common(10)
-print(Top_ten_trigrams)
+print("Top 10 Trigrams:\n", Top_ten_trigrams, "\n")
 
 
 #     e. Go through the text in the file
@@ -69,5 +69,5 @@ for s in sent_tokens:
             if(a, b, c == p, q, r):
                 concat_result.append(s)
 
-print("Concatenated Array : ",concat_result)
-print("Maximum of Concatenated Array : ", max(concat_result))
+print("Concatenated Array: \n", concat_result)
+print("Maximum of Concatenated Array: \n ", max(concat_result))

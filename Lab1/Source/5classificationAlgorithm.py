@@ -1,43 +1,5 @@
 import pandas as pd
-import seaborn as sns
-import matplotlib as plt
-import matplotlib.pyplot as plt
-from matplotlib.pylab import rcParams
 import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import GaussianNB
-from sklearn import svm
-
-# df = pd.read_csv('./dataset/dataset_183_adult.csv')
-# X = df.values[:, 0:14]
-# Y = df.values[:,14]
-#
-# X_train, X_test, y_train, y_test = train_test_split( X, Y, test_size = 0.3, random_state = 100)
-#
-#
-# ### Naive Bayes ###
-# gnb=GaussianNB()
-# gnb.fit(X_train,y_train)
-# y_pred=gnb.predict(X_test)
-#
-# ### SVM ###
-# model = svm.SVC(kernel='rbf',max_iter=9000)
-# model.fit(X_train, y_train)
-# y_pred= model.predict(X_test)
-#
-#
-# from sklearn.neighbors import KNeighborsClassifier
-# knn = KNeighborsClassifier(n_neighbors=5)
-# knn.fit(X_train,y_train)
-# knn.score(X_train,y_train)
-# train_score = knn.score(X_train,y_train)
-# test_score = knn.score(X_test,y_test)
-#
-
-
-
-
-
 
 #Loading Dataset
 adults = pd.read_csv('./dataset/dataset_183_adult.csv')
@@ -45,13 +7,18 @@ train_data = adults.drop("class",axis=1)
 label = adults['class']
 
 #Finding the Missing Values
-print(format(adults.isnull().sum()))
+print("Finding count of missing values:\n", format(adults.isnull().sum()))
 
 #Eliminating NAN values
 adults.dropna(axis = 0, inplace= True)
 
-#Converting non-numeric values to numeric
+#Encoding the categorial feature
 data_binary = pd.get_dummies(adults) #Convert categorical variable into dummy/indicator variables.
+
+# Find the most correlated features
+# numeric_features = data_binary.select_dtypes(include=[np.number])
+# corr = numeric_features.corr()
+# print (corr['class'].sort_values(ascending=False)[:4], '\n')
 
 data_binary.head()
 # print(data_binary)

@@ -1,130 +1,81 @@
-# Class 1: Flight which contains the flight number(f_id), its origin and destination, the number of stops between the
-#  origin and destination and the type of airlines(f_type)
-class Flight():
-    # INIT CONSTRUCTOR
-    def __init__(self, f_id, f_origin, f_destination, no_of_stops, flight_type, p_id, p_type):
-        self.f_id = f_id
-        self.origin = f_origin
-        self.destination = f_destination
-        self.stops = no_of_stops
-        self.flight_type = flight_type
-        self.pid = p_id
-        self.ptype = p_type
+import random
 
-    def get_flight_details(self,f_id):
-        print("Flight No:", f_id)
-        print("ORG:", self.origin)
-        print("DEST:", self.destination)
-        print("Flight Type:", self.flight_type)
+class Flight:
+    def __init__(self, airline_name, flight_number):                                        #Default constructor for flight class
+        self.airline_name = airline_name
+        self.flight_number = flight_number
 
-# Class2: Person which contains the personID(p_id), their name, phone number, gender, type of person(
-# employee/passenger) and it inherits the Flight class to get the flight details.
+    def flight_display(self):                                                               #Displaying flight details
+        print('Airlines : ', self.airline_name)
+        print('Flight number : ', self.flight_number)
 
-class Person(Flight):
-    # INIT CONSTRUCTOR
-    def __init__(self, p_id, p_type, p_gender, p_name, p_phonenumber, f_id, f_origin, f_destination, no_of_stops, flight_type):
-        self.name = p_name
-        self.gender = p_gender
-        self.p_phonenumber = p_phonenumber
-# Here we also use super class to use the parameters from Flight class
-        super(Person, self).__init__(f_id, f_origin, f_destination, no_of_stops, flight_type, p_id, p_type)
 
-# Here we used MULTIPLE INHERITANCE as the Person is derived from Flight and the Employee and Passenger is derived
-# from Person.
+class employee:                                                                             #eloyee class
+    def __init__(self, e_id, e_name, e_age, e_gender):                              #eloyee class constructor
+        self.e_name = e_name
+        self.e_age = e_age
+        self.__e_id = e_id
+        self.e_gender =  e_gender
+    def e_display(self):                                                            #Displaying eloyee details
+        print("Name of employee: ",self.e_name)
+        print('employee id: ', self.__e_id)
+        print('employee age: ',self.e_age)
+        print('employee gender: ', self.e_gender)
 
-# Class3: Employee which is an inherited class from Person, SSN is the private data member, since we cant reveal the
-# SSN.
+class Passenger:                                                                            #Passenger class
+    def __init__(self):
+        Passenger.__passport_number = input("Enter the passport number of the passenger: ") #Passport number is declared as private data member
+        Passenger.name = input('Enter name of the passenger: ')
+        Passenger.age = input('Enter age of passenger : ')
+        Passenger.gender = input('Enter the gender: ')
+        Passenger.class_type = input('Select business or economy class: ')
 
-class Employee(Person):
-    # INIT CONSTRUCTOR
-    def __init__(self, p_id, p_type, p_gender, p_name, p_phonenumber, f_id, e_SSN, f_origin, f_destination, no_of_stops, flight_type):
-        super(Employee,self).__init__(p_id, p_type, p_gender, p_name, p_phonenumber, f_id, f_origin, f_destination, no_of_stops, flight_type)
-        self.__emp_SSN = e_SSN
+class Baggage():                                                                            #Baggage class
+    cabin_bag = 1
+    bag_fare = 0
+    def __init__(self, checked_bags):
+        self.checked_bags = checked_bags
+        if checked_bags > 2 :                                                               #Calculating the cost if there are more than two cabin bags
+            for i in checked_bags:
+                self.bag_fare += 100
+        print("Number of checked bags allowed: ",checked_bags,"bag fare: ",self.bag_fare)
 
-# This method is to get the travel details of the employee
-    def get_travel_details_employee(self):
-       # print("Travel Details of ", self.emp_SSN)
-        print("Hello Pilot ", self.name, "Here are your flight details")
-        print("Flight_ID:", self.f_id)
-        print("ORG:", self.origin)
-        print("DEST:", self.destination)
 
-# Class 4:Passenger which is an inherited class from Person, Passport Number is the private data member,
-# since we cant reveal it.
-class Passenger(Person):
-    names = []
-    d = dict()
-    # INIT CONSTRUCTOR
-
-    def __init__(self, p_id, p_type, p_gender, p_name, p_phonenumber, f_id, pno, f_origin, f_destination, no_of_stops, flight_type):
-        super(Passenger, self).__init__(p_id, p_type, p_gender, p_name, p_phonenumber, f_id, f_origin, f_destination, no_of_stops, flight_type)
-        self.pno = pno
-
-# This is to get the travellers on the plane into a list, where we have the flightNumber(f_id)
-        # as the key and the passengername(name) as the value.
-        if self.f_id in Passenger.d.keys():
-            Passenger.d[self.f_id].append(self.name)
+class Fare(Baggage):                                                                        #Fare class which is subclass of Baggage
+    counter = 150                                                                           #Cost is fixed for purchasing at counter
+    online = random.randint(110, 200)                                                       #Cost varies with ticket is purchased through online and fair is generated through random function
+    total_fare=0
+    def __init__(self):
+        super().__init__(2)                                                                 #Super call
+        x = input('Buy ticket through online or counter: ')
+        if x == 'online':
+            Fare.total_fare = self.online + self.bag_fare
+        elif x == 'counter':
+            Fare.total_fare = self.counter + self.bag_fare
         else:
-            Passenger.d[self.f_id] = [self.name]
-
-    # This method is to get the travel details of the passenger
-    def get_travel_details_passanger(self):
-        print("Travel Details of ", self.name)
-        print("Flight Id:",   self.f_id)
-        print("Flight Type:", self.flight_type)
-        print("ORG:", self.origin)
-        print("DEST:", self.destination)
-
-# This method is to print the dictionary where we have stored the passengers list for different flights
-    def get_travelling_passengers(self):
-        print("Passengers on the flight", Passenger.d)
+            x=input('Enter correct transaction type:')
+        print("Total Fare before class type: ",Fare.total_fare)
 
 
-class Ticket(Passenger):
-    def __init__(self, p_id, p_type, p_gender, p_name, p_phonenumber, f_id, pno, f_origin, f_destination, no_of_stops,
-                 flight_type, boarding_group_no, row, seat_no):
-        super(Ticket, self).__init__(p_id, p_type, p_gender, p_name, p_phonenumber, f_id, pno, f_origin, f_destination,
-                                     no_of_stops, flight_type)
-        self.boarding_group_no = boarding_group_no
-        self.row = row
-        self.seat_no = seat_no
-        print("Your ticket details are below: ")
-
-    def get_boarding_pass(self, p_name):
-        for k, v in Passenger.d.items():
-            names = v
-            for i in names:
-                if i == p_name:
-                    print("Passenger Name:", p_name)
-                    print("Flight Id:", k)
-                    print("Boarding Group and Seat No:", self.boarding_group_no, self.row, self.seat_no)
-                    print("ORG:", self.origin)
-                    print("DEST:", self.destination)
+class Ticket(Passenger, Fare):                                                             #Multiple inheritence
+    def __init__(self):
+        print("Passenger name:",Passenger.name)                                            #Acccessing parent class variable
+        if Passenger.class_type == "business":
+            Fare.total_fare+=100
+        else:
+            pass
+        print("Passenger class type:",Passenger.class_type)
+        print("Total fare:",Fare.total_fare)                                              #Displaying total fair for itenary
 
 
-# p_id,p_type,p_gender,p_name,p_phonenumber,f_id,pno,f_origin,f_destination,no_of_stops,flight_type
-#f_id, f_origin, f_destination, no_of_stops, flight_type, p_id, p_type
-f1 = Flight("AE1425", "PHL", "MCI", 1, "AMERICAN EAGLE", "P1", "P4")
-f1.get_flight_details("AE1425")
+f1=Flight('American Airlines',6789)
+f1.flight_display()
 
-#Instances of Passenger class
-p1 = Passenger("P1", "P", "F", "NIKKI", 4258796358, "F1425", "A123", "MCI", "HYD", 3, "American Airlines")
-p2 = Passenger("P2", "P", "M", "PRANOOP", 2588796358, "F1425", "A123", "MCI", "HYD", 3, "American Airlines")
-p3 = Passenger("P3", "P", "F", "RELLA", 42587961558, "F1420", "A123", "MCI", "BLR", 3, "QATAR")
+e0 = employee('e1', 'e_Anu', 21, 'F')
+e0.e_display()
 
-#Instances of Employee class
-e1 = Employee("E1", "E", "M", "RESHWANTH", 142587961558, "F1425", "A123", "MCI", "HYD", 3, "American Airlines")
-e2 = Employee("E2", "E", "M", "VINAY", 422587961558, "F1425", "A123", "MCI", "HYD", 3, "American Airlines")
-e3 = Employee("E2", "E", "M", "ASHISH", 424587961558, "F1420", "A123", "MCI", "BLR", 3, "QATAR")
+p1 = Passenger()
 
-#This method prints the travel details for the passenger
-p1.get_travel_details_passanger()
-#This method prints the travel details for the employee
-e1.get_travel_details_employee()
+fare1=Fare()
 
-#This method prints the travelling passengers on that flight
-p1.get_travelling_passengers()
-
-#Prints the boarding pass
-T1 = Ticket("P1", "P", "F", "CHANU", 4258796358, "F1425", "A123", "MCI", "HYD", 3, "American Airlines", "G", "E",12)
-T1.get_boarding_pass("CHANU")
+t= Ticket()

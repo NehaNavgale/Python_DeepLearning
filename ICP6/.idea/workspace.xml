@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8c09692-e61e-4b26-8c33-3ea53c506733" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ICP4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICP4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ICP5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICP5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ICP7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ICP7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Source/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Source/1lSubstring.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/1lSubstring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Source/2tupleDic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/2tupleDic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Source/3airlineBooking.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/3airlineBooking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Source/3libraryManagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/3libraryManagement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Source/4calender.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Source/5classificationAlgorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/5classificationAlgorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Source/6kMean.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/6kMean.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab1/Source/7file_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/Source/7file_operation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +32,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kMean.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="86" column="31" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="31" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PCA.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Clusterusing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -182,17 +215,18 @@
       <workItem from="1569466804106" duration="192000" />
       <workItem from="1569598909041" duration="1357000" />
       <workItem from="1569617133400" duration="7705000" />
+      <workItem from="1571005574992" duration="2614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9254000" />
+    <option name="totallyTimeSpent" value="11868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="941" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -226,15 +260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Clusterusing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/silhouetteScore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -247,21 +272,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PCA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="72" column="10" lean-forward="true" selection-start-line="52" selection-end-line="72" selection-end-column="10" />
+        <state relative-caret-position="780">
+          <caret line="52" column="12" lean-forward="true" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kMean.py">
+    <entry file="file://$PROJECT_DIR$/Clusterusing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="86" column="31" selection-start-line="86" selection-start-column="16" selection-end-line="86" selection-end-column="31" />
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kMean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>

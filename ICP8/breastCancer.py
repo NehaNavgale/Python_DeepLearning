@@ -33,9 +33,27 @@ my_first_nn.add(Dense(8, input_dim=30, activation='relu')) # hidden layer
 my_first_nn.add(Dense(20, input_dim=30, activation='relu')) # hidden layer
 my_first_nn.add(Dense(50, input_dim=30, activation='relu')) # hidden layer
 my_first_nn.add(Dense(1, activation='sigmoid')) # output layer
-my_first_nn.compile(loss='binary_crossentropy', optimizer='adam')
+my_first_nn.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 my_first_nn_fitted = my_first_nn.fit(X_train, y_train, epochs=100, verbose=0,
                                      initial_epoch=0)
 print(my_first_nn.summary())
 print(my_first_nn.evaluate(X_test, y_test, verbose=0))
+
+# print(my_first_nn.summary())
+# y_pred = my_first_nn.predict(X_test)
+# y_pred = (y_pred > 0.5)
+#
+# from sklearn.metrics import confusion_matrix
+# cm = confusion_matrix(y_test, y_pred)
+#
+# ax= plt.subplot()
+# sns.heatmap(cm, annot=True, ax = ax)
+#
+# # labels, title and ticks
+# ax.set_xlabel('Predicted labels')
+# ax.set_ylabel('True labels')
+# ax.set_title('Confusion Matrix')
+# ax.xaxis.set_ticklabels(['Benign', 'Malignant'])
+# ax.yaxis.set_ticklabels(['Benign', 'Malignant'])
+# plt.show()
 

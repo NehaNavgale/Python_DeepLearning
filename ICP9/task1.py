@@ -24,7 +24,7 @@ test_data = test_data.astype('float')
 #scale data
 train_data /=255.0
 test_data /=255.0
-#change the labels frominteger to one-hot encoding
+#change the labels from integer to one-hot encoding
 train_labels_one_hot = to_categorical(train_labels)
 test_labels_one_hot = to_categorical(test_labels)
 
@@ -42,18 +42,22 @@ history = model.fit(train_data, train_labels_one_hot, batch_size=256, epochs=20,
 [test_loss, test_acc] = model.evaluate(test_data, test_labels_one_hot)
 print("Evaluation result on Test Data : Loss = {}, accuracy = {}".format(test_loss, test_acc))
 
-# print(history.history.keys())
+print(history.history.keys())
 
-# summarize history for accuracy
-N = 20
-# plt.style.use("ggplot")
-plt.figure()
-plt.plot(np.arange(0, N), history.history["loss"], label="train_loss")
-plt.plot(np.arange(0, N), history.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, N), history.history["accuracy"], label="train_acc")
-plt.plot(np.arange(0, N), history.history["val_accuracy"], label="val_acc")
-plt.title("Training Loss and Accuracy on Dataset")
-plt.xlabel("Epoch #")
-plt.ylabel("Loss/Accuracy")
-plt.legend(loc="lower left")
-plt.savefig("plot.png")
+# Plot the graph for accuracy of both train and test data.
+plt.plot(history.history['accuracy'])
+plt.plot(history.history['val_accuracy'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.show()
+
+# Plot the graph for loss of both train and test data.
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.show()

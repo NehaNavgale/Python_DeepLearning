@@ -45,15 +45,12 @@ print("Evaluation result on Test Data : Loss = {}, accuracy = {}".format(test_lo
 
 
 #loading and predicting the model
-#model = load_model('mnist.h5')
-
-
-predictions = model.predict(test_data[[20],:], batch_size=1)
+predictions = model.predict(test_data[[21],:], batch_size=1)
 print(predictions)
 
-predict_classes = model.predict_classes(test_data[[20],:])
+predict_classes = model.predict_classes(test_data[[21],:])
 print(predict_classes)
 
-plt.imshow(test_images[20].reshape((28, 28)), cmap = 'gray')
+plt.imshow(test_images[21].reshape((28, 28)), cmap = 'gray')
 plt.title("This is:" + str(predict_classes[0]))
 plt.show()

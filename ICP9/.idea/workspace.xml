@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d884cbe8-a72a-4ee8-a516-5ea51746b022" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Task2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Task3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +36,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bonus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="300">
               <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -266,12 +267,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571868941030</updated>
-      <workItem from="1571868943464" duration="10132000" />
+      <workItem from="1571868943464" duration="10373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10132000" />
+    <option name="totallyTimeSpent" value="10373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="941" extended-state="6" />
@@ -288,7 +289,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29681978" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29681978" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,7 +360,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bonus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="300">
           <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />

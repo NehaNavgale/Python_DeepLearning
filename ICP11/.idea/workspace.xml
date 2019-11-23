@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="075f68f9-fef0-4bf0-9fe6-b5bff3de9cc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cifar10.h5" beforeDir="false" afterPath="$PROJECT_DIR$/cifar10.h5" afterDir="false" />
-    </list>
+    <list default="true" id="075f68f9-fef0-4bf0-9fe6-b5bff3de9cc1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,12 +252,12 @@
       <option name="presentableId" value="Default" />
       <updated>1573611014002</updated>
       <workItem from="1573611015266" duration="1983000" />
-      <workItem from="1573780787319" duration="18334000" />
+      <workItem from="1573780787319" duration="18693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20317000" />
+    <option name="totallyTimeSpent" value="20676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="941" extended-state="0" />
@@ -269,7 +267,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6289753" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6289753" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

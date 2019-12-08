@@ -33,12 +33,12 @@ model.add(layers.Dense(16, activation='sigmoid'))
 
 # output layer
 model.add(layers.Dense(1))
-keras.optimizers.SGD(lr=0.01)
+keras.optimizers.SGD(lr=0.1)
 
 model.compile(optimizer=SGD(), loss='mse', metrics=['mae'])
 
 tensorborad = TensorBoard(log_dir="logs/{}".format(time()))
 
-history = model.fit(X_train_scaled, y_train, batch_size=256, validation_split=0.2, epochs=50, callbacks=[tensorborad])
+history = model.fit(X_train_scaled, y_train, batch_size=64, validation_split=0.2, epochs=50, callbacks=[tensorborad])
 
 print(model.evaluate(X_test_scaled, y_test))

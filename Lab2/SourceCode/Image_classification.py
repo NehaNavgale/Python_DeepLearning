@@ -52,8 +52,9 @@ history = model.fit_generator(train_generator,
                     validation_steps= 4)
 
 model.summary()
-acc = history.history['acc']
-val_acc = history.history['val_acc']
+print(history.history.keys())
+acc = history.history['accuracy']
+val_acc = history.history['val_accuracy']
 loss = history.history['loss']
 val_loss = history.history['val_loss']
 epochs = range(1, len(acc) + 1)
@@ -68,5 +69,4 @@ plt.plot(epochs, loss, 'red', label='Training loss')
 plt.plot(epochs, val_loss, 'blue', label='Validation loss')
 
 plt.legend()
-
 plt.show()
